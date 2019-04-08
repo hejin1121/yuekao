@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/addBill.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h2>创建商品</h2>
+        </header>
+        <div class="main">
+            <ul>
+                <li><input type="text" placeholder="商品名称/花型号" id="huatype"></li>
+                <li>
+                    <p class="tu">商品图片</p>
+                    <div class="tupian" id="tupian">
+                        <div class="add">添加图片</div>
+                        <div><img src="images/image/pic1.png" alt="" data-index="0"></div>
+                        <div><img src="images/image/pic4.png" alt="" data-index="1"></div>
+                        <div><img src="images/image/pic5.png" alt="" data-index="2"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="money">
+                        <span>价格</span><input type="text"><select>
+								<option value ="">单位</option>
+								<option value ="">人民币</option>
+								<option value ="">美元</option>
+							</select>
+                    </div>
+                </li>
+                <li>
+                    <p class="lei"><span>品类标签</span><input class="btn" type="text" placeholder="选择标签>" id="pinlei">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"><span>成分</span><input class="btn" type="text" placeholder="选择成分>">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"><span>幅宽</span><input class="btn" type="text" placeholder="选择幅宽>" id="width">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"><span>地区</span><input class="btn" type="text" placeholder="选择地区>">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"><span>数量</span><input class="btn" type="text" placeholder="输入数量">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"><span>克重</span><input class="btn" type="text" placeholder="输入克重">
+                    </p>
+                </li>
+                <li>
+                    <p class="lei"> <span>颜色</span><input class="btn" type="text" placeholder="输入颜色"></p>
+                </li>
+            </ul>
+            <div class="beizhu">
+                <span>备注</span>
+                <textarea name="" id="" cols="30" rows="10" placeholder="输入商品备注"></textarea>
+            </div>
+            <div class="type" id="type">
+                <p>商品类型</p>
+                <span data-index="0">现货</span>
+                <span data-index="1">供应</span>
+            </div>
+            <div class="chuang">
+                <button type="button" id="button">创建商品</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['js/main'], () => {
+            require(['addBill'])
+        })
+    </script>
+</body>
+
+</html>

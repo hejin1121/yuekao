@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-input">
+                <input type="text" placeholder="搜索花型工艺">
+                <img src="images/image/sou.png" alt="" class="imgs">
+            </div>
+            <div class="fabu">
+                <div class="zhaoxiang">
+                    <img src="images/image/btn_search@2x.png" alt="">
+                </div>
+                <div class="header-cont">
+                    <dl class="header-left">
+                        <dt><img src="images/image/nav_icon_btn_order@2x.png" alt=""></dt>
+                        <dd>
+                            <div>发布求购</div>
+                            <p>30秒发布信息</p>
+                        </dd>
+                    </dl>
+                    <dl class="header-right">
+                        <dt><img src="images/image/nav_icon_btn_product@2x.png" alt=""></dt>
+                        <dd>
+                            <div>发布商品</div>
+                            <p>获取更多曝光</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </header>
+        <h2>推荐商品</h2>
+        <div class="content">
+            <div class="main">
+                <div class="list">
+                    <!-- <dl>
+                        <dt><img src="./images/image/pic1.png" alt=""></dt>
+                        <dd>
+                            <div>qweqweqweqwe</div>
+                            <p>xzczxczxczx</p>
+                        </dd>
+                    </dl> -->
+
+                </div>
+                <div class="list">
+                    <!-- <dl>
+                        <dt><img src="./images/image/pic1.png" alt=""></dt>
+                        <dd>
+                            <div>qweqweqweqwe</div>
+                            <p>xzczxczxczx</p>
+                        </dd>
+                    </dl> -->
+
+                </div>
+                <p class="loding">上拉加载</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['js/main'], () => {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
